@@ -130,7 +130,7 @@ elif page == "Executive Dashboard":
                 filtered["product_line"].str.contains(search, case=False, na=False)
             )
             filtered = filtered[mask]
-        st.dataframe(filtered, use_container_width=True)
+        st.dataframe(filtered, width="stretch")
 
 # ---------------- STRATEGIC RECOMMENDATIONS ----------------
 else:
